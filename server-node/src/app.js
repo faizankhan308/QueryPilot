@@ -29,11 +29,13 @@ const ALLOWED_ORIGINS = [
   "http://127.0.0.1:5173",
   "http://localhost:3000",
   "http://127.0.0.1:3000",
-  // Production — Vercel deployment
+  // Production — Vercel deployment (querypilot or query-pilot variants)
   "https://querypilot.vercel.app",
+  "https://query-pilot.vercel.app",
   "https://querypilot-git-main-faizankhan308.vercel.app",
+  "https://query-pilot-git-main-faizankhan308.vercel.app",
   // Allow any *.vercel.app preview deployment for this project
-  /^https:\/\/querypilot.*\.vercel\.app$/,
+  /^https:\/\/query.?pilot.*\.vercel\.app$/,
 ];
 
 app.use(
