@@ -24,10 +24,16 @@ const app = express();
 // Mirror the exact origins allowed by the Python FastAPI backend (main.py).
 
 const ALLOWED_ORIGINS = [
+  // Local development
   "http://localhost:5173",
   "http://127.0.0.1:5173",
   "http://localhost:3000",
   "http://127.0.0.1:3000",
+  // Production — Vercel deployment
+  "https://querypilot.vercel.app",
+  "https://querypilot-git-main-faizankhan308.vercel.app",
+  // Allow any *.vercel.app preview deployment for this project
+  /^https:\/\/querypilot.*\.vercel\.app$/,
 ];
 
 app.use(
