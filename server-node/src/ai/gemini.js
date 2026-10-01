@@ -13,7 +13,7 @@ export class GeminiService {
   }
 
   get model() {
-    return process.env.GEMINI_MODEL || "gemini-2.5-flash-lite";
+    return process.env.GEMINI_MODEL || "gemini-2.0-flash";
   }
 
   get client() {
