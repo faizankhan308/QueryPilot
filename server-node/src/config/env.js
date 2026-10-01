@@ -41,7 +41,7 @@ const EnvSchema = z.object({
    * .env.example).  The Python code defaults to gemini-3.1-flash-lite
    * in-code but the canonical value lives in .env — we honour .env.
    */
-  GEMINI_MODEL: z.string().default("gemini-2.0-flash"),
+  GEMINI_MODEL: z.string().default("gemini-3.5-flash"),
 
   /** Optional PostgreSQL URL used only by integration tests. */
   TEST_POSTGRES_URL: z.string().optional().default(""),
