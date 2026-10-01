@@ -1,0 +1,46 @@
+# Python legacy backend (replaced by server-node/)
+server/
+
+# Python utility scripts (not required by Node.js application)
+scripts/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+
+# Pytest
+.pytest_cache/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Keep demo databases
+!database/samples/
+!database/samples/*.db
+
+# Frontend
+node_modules/
+dist/
+
+# Logs
+*.log
